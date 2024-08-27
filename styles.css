@@ -1,0 +1,4 @@
+/* styles.css */
+img:hover {
+    outline: 2px solid red;
+}

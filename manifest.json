@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "copy-wikipedia-alt-text",
+  "version": "1.0",
+  "description": "Hover over an image to copy its alt text with a key combination.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "random.png"
+  }
+}
